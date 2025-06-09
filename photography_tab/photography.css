@@ -1,0 +1,92 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 95px;
+  gap: 3rem;
+  padding: 1rem 0;
+  background-color: #fff;
+  z-index: 1000;
+  font-family: "inter";
+}
+
+
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #888;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+   -webkit-transition: all 0.1s linear;
+          transition: all 0.1s linear;
+}
+
+.menu a:hover {
+  color: #b6babb;
+   -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 90%;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.menu .active{
+  color: #000;
+}
+
+.menu .active:hover{
+  color: #000;
+   -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05); 
+}
+
+
+
+main.gallery {
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 150px auto 40px auto;
+}
+
+.image {
+  background-color: #d9d9d9;
+  overflow: hidden; 
+}
+
+
+.image img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.tall {
+  grid-row: span 2;
+  width: 200px;
+}

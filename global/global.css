@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  color: #666;
+  background-color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  right: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mail img{
+  width: 21px;
+  height: 21px;
+  --f: 1.1;
+  clip-path: inset(0);
+  transition: 0.15s;
+}
+
+.home img{
+  width: 21px;
+  height: 21px;
+  --f: 1.1;
+  clip-path: inset(0);
+  transition: 0.15s;
+}
+
+
+.insta img{
+  width: 19px;
+  height: 19px;
+  --f: 1.1;
+  clip-path: inset(0);
+  transition: 0.15s;
+}
+
+.mail img:hover,
+.insta img:hover,
+.home img:hover {
+  clip-path: inset(calc((1 - 1/var(--f)) * 5%));
+  scale: var(--f);
+}
+
+
