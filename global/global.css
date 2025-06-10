@@ -45,7 +45,7 @@ header {
 }
 
 
-.insta img{
+.linkedin img{
   width: 19px;
   height: 19px;
   --f: 1.1;
@@ -54,7 +54,7 @@ header {
 }
 
 .mail img:hover,
-.insta img:hover,
+.linkedin img:hover,
 .return img:hover {
   clip-path: inset(calc((1 - 1/var(--f)) * 5%));
   scale: var(--f);
