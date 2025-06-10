@@ -17,7 +17,7 @@ header {
   z-index: 1000;
 }
 
-.home {
+.return {
   display: flex;
   align-items: center;
 }
@@ -36,7 +36,7 @@ header {
   transition: 0.15s;
 }
 
-.home img{
+.return img{
   width: 21px;
   height: 21px;
   --f: 1.1;
@@ -55,7 +55,7 @@ header {
 
 .mail img:hover,
 .insta img:hover,
-.home img:hover {
+.return img:hover {
   clip-path: inset(calc((1 - 1/var(--f)) * 5%));
   scale: var(--f);
 }
