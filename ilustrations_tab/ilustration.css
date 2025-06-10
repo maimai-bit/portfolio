@@ -5,14 +5,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 95px;
   gap: 3rem;
   padding: 1rem 0;
   background-color: #fff;
   z-index: 1000;
-  font-family: "inter";
+  font-family: "Inter", sans-serif;
+  margin-bottom: 95px;
 }
-
 
 .menu a {
   text-decoration: none;
@@ -20,57 +19,48 @@
   color: #888;
   letter-spacing: 1px;
   font-size: 1rem;
-  transition: color 0.3s ease;
-   -webkit-transition: all 0.1s linear;
-          transition: all 0.1s linear;
+  transition: color 0.3s ease, transform 0.1s linear;
 }
 
 .menu a:hover {
   color: #b6babb;
-   -webkit-transform: scale(1.05);
-     -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-       -o-transform: scale(1.05);
-          transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .text {
-    max-width: 90%;
-  }
-
   .menu {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
+    margin-bottom: 60px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+  
+  .announcement {
+    font-family: "Georgia", serif;
+    color: #888;
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
-.menu .active{
+.menu .active {
   color: #000;
 }
 
-.menu .active:hover{
+.menu .active:hover {
   color: #000;
-   -webkit-transform: scale(1.05);
-     -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-       -o-transform: scale(1.05);
-          transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
-
-
-.announcement{
-    font-family: "georgia";
-    color: #888;
-    margin-top: 310px;
-    margin-left: 500px;
-    font-size: 1.2em;
-
+.announcement {
+  font-family: "Georgia", serif;
+  color: #888;
+  margin-top: 310px;
+  margin-left: 500px;
+  font-size: 1.2em;
 }
