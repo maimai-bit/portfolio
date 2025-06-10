@@ -1,22 +1,3 @@
-/* ux display page styles begin */
-
-.metho img{
-  margin-left: 330px;
-  margin-top: 180px;
-  width: 160px;
-  cursor: pointer;
-  border-radius: 3%;
-}
-
-.metho img:hover {
-    transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 0 15px #14141450;
-}
-
-/* ux display page styles end */
-
-
-
 /* portfolio cathegories display styles begin */
 .content{
   display: flex;
@@ -109,33 +90,6 @@
 /* portfolio cathegories display styles end */
 
 
-
-
-/* branding display page begin */
-
-.glora{
-  margin-left: 330px;
-  margin-top: 180px;
-  cursor: pointer;
-}
-
-.glora img{
-  width: 160px;
-  border-radius: 3%;
-}
-
-.glora img:hover{
-    transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 0 15px #ca693050;
-}
-
-
-/* branding display page end */
-
-
-
-
-
 /* bottom navegation begin*/
 .menu {
   position: fixed;
@@ -144,36 +98,53 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 95px;
-  gap: 3rem;
   padding: 1rem 0;
+  margin-bottom: clamp(60px, 10vh, 95px); 
+  gap: 3rem; 
   background-color: #fff;
   z-index: 1000;
-  font-family: "inter";
+  font-family: "inter"; 
+  box-sizing: border-box;
 }
-
 
 .menu a {
   text-decoration: none;
   font-weight: bold;
   color: #888;
   letter-spacing: 1px;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-   -webkit-transition: all 0.1s linear;
-          transition: all 0.1s linear;
+  font-size: clamp(0.8rem, 2vw, 1rem); 
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .menu a:hover {
   color: #b6babb;
-   -webkit-transform: scale(1.05);
-     -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-       -o-transform: scale(1.05);
-          transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
+.menu .active {
+  color: #000;
+}
+
+.menu .active:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+
 @media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    padding: 0.8rem 0; 
+    margin-bottom: clamp(40px, 8vh, 70px); 
+  }
+
+  .menu a {
+    font-size: clamp(0.7rem, 2.5vw, 0.9rem); 
+    padding: 0.2rem 0.5rem; 
+  }
+
+
   .intro {
     flex-direction: column;
     align-items: center;
@@ -182,24 +153,20 @@
 
   .text {
     max-width: 90%;
+    padding: 0 15px; 
   }
+}
 
+
+@media (max-width: 480px) {
   .menu {
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.7rem; 
+    padding: 0.6rem 0;
+    margin-bottom: clamp(20px, 5vh, 50px);
   }
-}
 
-.menu .active{
-  color: #000;
-}
-
-.menu .active:hover{
-  color: #000;
-   -webkit-transform: scale(1.05);
-     -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-       -o-transform: scale(1.05);
-          transform: scale(1.05); 
+  .menu a {
+    font-size: clamp(0.6rem, 3vw, 0.8rem); 
+  }
 }
 /* bottom navegation end */
