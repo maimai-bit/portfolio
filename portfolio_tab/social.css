@@ -128,6 +128,59 @@
   transition-delay: 0.25s;
 }
 
+@media (max-width: 768px) {
+  .for-glora {
+    margin-left: 30px;
+    margin-top: 160px;
+  }
+
+  .for-glora .tile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .youtube {
+    margin-left: 30px;
+  }
+
+  .youtube .tile {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .names {
+    width: 100%;
+    height: auto;
+  }
+
+  .details {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .details .title {
+    font-size: 14px;
+  }
+
+  .details .info {
+    font-size: 10px;
+  }
+
+  .youtube .details {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .youtube .details .title {
+    font-size: 18px;
+  }
+
+  .youtube .details .info {
+    font-size: 12px;
+  }
+}
+
+
 
 
 

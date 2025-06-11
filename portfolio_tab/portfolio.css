@@ -1,11 +1,11 @@
 /* portfolio cathegories display styles begin */
-.content{
+.content {
   display: flex;
   justify-content: center;
   padding-top: 170px;
   gap: 9px;
+  flex-wrap: nowrap; /* default desktop: side by side */
 }
-
 
 .tile {
   display: inline-block;
@@ -67,6 +67,7 @@
   font-size: 12px;
 }
 
+/* Hover behavior for desktop */
 .tile:hover::before,
 .tile:focus::before {
   top: 50%;
@@ -85,6 +86,30 @@
 
 .tile:hover .info {
   transition-delay: 0.25s;
+}
+
+/* ----------- Mobile View ----------- */
+@media (max-width: 768px) {
+  .content {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20vw;
+    gap: 0.01px;
+  }
+
+  .tile img {
+    width: 100px;
+  }
+
+  .tile::before {
+    top: 50%;
+    opacity: 1;
+  }
+
+  .details span {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* portfolio cathegories display styles end */
