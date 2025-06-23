@@ -1,4 +1,3 @@
-/* Base styles for the menu */
 .menu {
   position: fixed;
   bottom: 0;
@@ -6,13 +5,23 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
-  margin-bottom: clamp(60px, 10vh, 95px); 
-  gap: 3rem; 
+  
+  padding-top: 1rem;
+  padding-bottom: clamp(60px, 10vh, 95px); 
+  gap: 3rem;
   background-color: #fff;
   z-index: 1000;
-  font-family: "inter"; 
+  font-family: "inter";
   box-sizing: border-box;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #888;
+  letter-spacing: 1px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .menu a {
@@ -33,10 +42,7 @@
   color: #000;
 }
 
-.menu .active:hover {
-  color: #000;
-  transform: scale(1.05);
-}
+
 
 
 @media (max-width: 768px) {
