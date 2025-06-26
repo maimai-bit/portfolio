@@ -11,6 +11,7 @@
 .display .box {
   background-color: #d8d8d8;
   height: 180px;
+  width: 100%;
 }
 
 .box img{
@@ -29,6 +30,7 @@
 
 
 
+/* bottom navegation start */
 .menu {
   position: fixed;
   bottom: 0; 
