@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../global/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Italianno&family=Monda:wght@400..700&display=swap"
       rel="stylesheet"
@@ -46,16 +47,14 @@
         <button class="carousel-btn prev">&#10094;</button>
         <div class="carousel-track">
           <div class="carousel-slide">
-           <a href="glora.html"> <img
-              src="../images/glora-cover.png"
-              alt="Slide 1"
-            /> </a>
+            <a href="glora.html">
+              <img src="../images/glora-cover.png" alt="Slide 1" />
+            </a>
           </div>
           <div class="carousel-slide">
-           <a href="pace.html"> <img
-              src="../images/pace-cover.png"
-              alt="Slide 2"
-            /> </a>
+            <a href="pace.html">
+              <img src="../images/pace-cover.png" alt="Slide 2" />
+            </a>
           </div>
           <!-- <div class="carousel-slide">
             <img
@@ -77,5 +76,31 @@
     </div>
   </body>
 
-  <script src="../global/global.js"></script>
+  <script>
+    // carrossel //
+
+    const track = document.querySelector(".carousel-track");
+    const slides = Array.from(track.children);
+    const nextBtn = document.querySelector(".carousel-btn.next");
+    const prevBtn = document.querySelector(".carousel-btn.prev");
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    window.addEventListener("resize", updateCarousel);
+    updateCarousel(); // Initial position
+  </script>
 </html>
