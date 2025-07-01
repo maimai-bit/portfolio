@@ -10,6 +10,7 @@
   margin-left: 260px;
   overflow: hidden;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .carousel-track {
