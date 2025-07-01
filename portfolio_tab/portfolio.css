@@ -6,8 +6,7 @@
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin-top: 130px;
-  margin-left: 260px;
+  margin: 130px auto 0; /* center horizontally */
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
@@ -54,6 +53,34 @@
 .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 95%;
+    margin: 80px auto 0;
+  }
+
+  .carousel-slide {
+    height: 250px;
+  }
+
+  .carousel-btn {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide {
+    height: 180px;
+  }
+
+  .carousel-btn {
+    padding: 6px;
+  }
+}
+
+
 
 
 
