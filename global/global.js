@@ -3,7 +3,7 @@ function confirmEmailRedirect(e) {
     const confirmed = confirm("You are being redirected to your email. Proceed?");
     if (confirmed) {
       
-      window.location.href = "mailto:maikellyjordan@gmail.com?subject=Contact&body=Hi%20Maikelly%2C";
+      window.location.href = "mailto:maisdesigning@gmail.com?subject=Contact&body=Hi%20Maikelly%2C";
     }
   }
 
