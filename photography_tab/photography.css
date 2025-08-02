@@ -119,6 +119,7 @@ main.gallery {
 
 .tall {
   grid-row: span 2;
+  
 }
 
 @media (max-width: 768px) {
