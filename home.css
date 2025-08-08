@@ -50,6 +50,58 @@
   margin: 10px;
 }
 
+@media (min-width: 1000px) {
+  .aboutMe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .photo img {
+    padding-left: 70px;
+    padding-top: 120px;
+    width: 230px;
+  }
+
+  .text {
+    padding-left: 20px;
+    max-width: 600px;
+  }
+
+  .hello {
+    display: inline-block;
+    margin-top: 97px;
+    font-size: 4rem;
+    color: #000;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .text p {
+    margin-top: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.08;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skills img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+}
 
 
 
