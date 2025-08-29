@@ -1,80 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F4VB66EPL1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F4VB66EPL1');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maikelly Cardoso</title>
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="global/global.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Monda:wght@400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
 
+  <body>
 
-<body>
-<header>
-  
-  <div class="return">
-    <!-- <a href="#"><img src="icons/home.png" alt="Home" /></a> -->
-  </div>
-  <div class="social-icons">
-    <div class="mail">
-      <a href="#" onclick="confirmEmailRedirect(event)">
-      <img src="icons/email.png" alt="Mail" />
-      </a>
-    </div>
-    <div class="linkedin">
-      <a href="https://www.linkedin.com/in/maikelly-cardoso" target="_blank"><img src="icons/linkedin-logo.png" alt="linkedin" /></a>
-    </div>
-  </div>
-    
-</header>
+    <!-- ABOUT SECTION -->
 
+    <section class="about">
+      <div class="about-box">
+        <div class="about-hello">HELLO <span class="square">■</span></div>
 
-  <div class="aboutMe">
-    <div class="photo">
-      <img src="images/me.png"/>
-    </div>
-    <div class="text">
-      <h1><span class="hello">hello</span></h1>
-      <p> I'm Maikelly and this is Mai Portfolio. (Did you get the joke?)
-      <br> <br> I gotta say I’m really proud of this space because everything you see here, <br> from design to code, was created by me. Not bad, right?
-      <br> <br> My specialties in graphic design include print materials like posters, business cards, menus, flyers, and brochures, as well as branding and <br>product/packaging design. 
-      <br> <br> So, How may I help your bussiness today?
-      <br>
-      <div class="skills">
-        <img src="icons/photoshop.png"/>
-        <img src="icons/illustrator.png"/>
-        <img src="icons/indesign.png"/>
-        <img src="icons/figma.png"/>
-        <img src="icons/html.png"/>
-        <img src="icons/css.png"/>
+        <div class="about-photo">
+          <img src="images/profile-pic.png" alt="Profile Picture" />
+        </div>
 
+        <div class="about-description">
+          <span class="square">■</span> I’M MAIKELLY, A GENERALIST DESIGNER WITH EXPERTISE IN INTERFACE, PRINT ASSETS, BRAND KITS, AND PACKAGING.
+<br> <br> MY STYLE IS CLEAN AND TIMELESS. I BELIEVE GREAT DESIGN ISN’T JUST ABOUT LOOKS, IT’S ABOUT CLEAR COMMUNICATION. <br> <br>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO TITLE -->
+
+    <section class="portfolio">
+      <div class="portfolio-header">
+        <span class="title">PORTFOLIO</span>
+        <span class="square-left">■</span>
+        <span class="line"></span>
+        <span class="square">■</span>
+      </div>
+    </section>
+
+    <!-- FILTER -->
+
+    <div class="filters">
+      <div class="right-filter">
+        <button class="filter-btn" data-filter="identity">IDENTITY</button>
+        <button class="filter-btn" data-filter="marketing">MARKETING</button>
+        <button class="filter-btn" data-filter="interface">INTERFACE</button>
+        <!-- <button class="filter-btn" data-filter="editorial"></button> -->
+      </div>
+
+      <div class="left-filter">
+        <button class="filter-all-btn">SEE ALL</button>
       </div>
     </div>
-  </div>
 
-  <nav class="menu">
-    <a class="active">ABOUT ME</a>
-    <a href="portfolio_tab/portfolio.html">PORTFOLIO</a>
-    <!-- <a href="files/Cardoso Maikelly.pdf" target="_blank">CURRICULUM</a> -->
-    <a href="photography_tab/photography.html">PHOTOGRAPHY</a>
-    <a href="files/merged.pdf" target="_blank">CERTIFICATES</a>
-  </nav>
-</body>
+    <!-- PROJECTS -->
 
-<script src="global/global.js"></script>
+    <div class="projects">
+    
+      <div class="item-list">
+        <div class="list-item" data-category="identity">
+          <div class="item-title"> ROLLNA <span class="square">■</span>
+        </div>
+        <div class="project-cover"> <img src="images/rollna-cover.png"/> </div>
+        <div class="right-description"> 
+          <div class="item-description">BRAND IDENTITY, PACKAGING & PRINT ASSESTS REDESIGN </div>
+          <button class="take-look-btn" data-image="images/rollna.png">TAKE A LOOK</button>
+        </div>
+      </div>
 
+      <div class="list-item" data-category="identity">
+        <div class="item-title"> GLORA <span class="square">■</span> </div>
+        <div class="project-cover"> <img src="images/glora-cover.png"/> </div>
+        <div class="right-description"> 
+          <div class="item-description"> BRAND IDENTITY </div>
+          <button class="take-look-btn" data-image="images/glora.png">TAKE A LOOK</button>
+        </div>
+      </div>
+
+      <div class="list-item" data-category="identity">
+        <div class="item-title"> PACE+ <span class="square">■</span> </div>
+        <div class="project-cover"> <img src="images/pace-cover.png"/> </div>
+        <div class="right-description"> 
+          <div class="item-description">PACKAGING DESIGN & BRAND DESIGN </div>
+          <button class="take-look-btn" data-image="images/pace.png">TAKE A LOOK</button>
+         </div>
+      </div>
+
+      <div class="list-item" data-category="marketing">
+        <div class="item-title"> FUERTE <span class="square">■</span> </div>
+        <div class="project-cover"> <img src="images/fuerte-flyer.png"/> </div>
+        <div class="right-description"> 
+          <div class="item-description"> FUERTE'S STARBUCKS PROMOTION </div>
+          <button class="take-look-btn">TAKE A LOOK</button>
+        </div>
+      </div>
+
+      <div class="list-item" data-category="interface">
+        <div class="item-title"> METHO <span class="square">■</span> </div>
+        <div class="project-cover"> <img src="images/metho-cover.png"/> </div>
+        <div class="right-description"> 
+          <div class="item-description">TO-DO APP INTERFACE DESIGN </div>
+          <button class="take-look-btn" data-image="images/metho.png">TAKE A LOOK</button>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- EMAIL -->
+
+    <div class="email"> MAISDESIGNING@GMAIL.COM </div>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="loader" id="modalLoader"></div>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+      
+    <script src="home.js"></script>
+  </body>
 </html>
-
