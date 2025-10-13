@@ -1,0 +1,157 @@
+/* BODY & HEADER */
+
+.html, body{
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+    font-family: 'kalam';
+    background-color: #fff;
+    display: block;
+    justify-content: center;
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.title img {
+    width: 380px;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+
+/*  MENU */
+
+
+.menu ul {
+    width: 480px;          
+    
+    background-image: url('../images/menu-background.svg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 40px;
+    margin: 0;
+}
+
+
+.menu li a {
+    font-family: 'Caveat', cursive; 
+    text-decoration: none; 
+    color: #c0bebe; 
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-controls,
+.close-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.page-controls img,
+.close-control img {
+    width: 45px;
+}
+
+
+.menu li a:hover {
+    color: #8c8b8b; 
+}
+
+/* MESSAGE */
+
+
+.end-page-message{
+    font-family: monospace;
+    color: #7D7D7D;
+    margin-left: 350px;
+    margin-top: 180px;
+    font-size: 1.1em;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-top: 80px;
+
+}
+
+.signature img{
+    width: 130px;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-right: 820px;
+
+}
+
+.email {
+    font-family: monospace;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.icon-right img{
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.icon-left img{
+    width: 20px;
+    margin-top: 10px;
+    margin-right: px;
+}
+
+/* PROJECT */
+
+.project{
+    display: flex;
+    flex-direction: column;
+    margin-left: 295px;
+    margin-top: 30px;
+}
+
+.project img{
+    width: 750px;
+}
