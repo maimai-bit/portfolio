@@ -78,75 +78,108 @@ nav.menu ul li a.active {
 /* PROJECTS */
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;                 
-  margin-top: 70px;
-  margin-left: 250px;
-  max-width: calc((250px * 3) + (50px * 2)); 
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  column-gap: 70px;                         
+  row-gap: 20px;                           
+  justify-content: center;                
+  padding: 50px;
 }
 
 .project-item {
-  flex: 0 0 250px;           
+  width: 250px;
 }
 
-.projects img {
-  width: 100%; 
-  height: auto;
+.tv-container {
+  position: relative;
+  width: 100%;
+}
+
+.tv-base {
+  width: 100%;
   display: block;
 }
+
+.tv-screen {
+  position: absolute;
+  top: 21%;
+  left: 5%;
+  width: 90%;
+  height: 48%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 
 
 /* MESSAGE */
 
 
-.end-page-message{
+.end-page-message {
     font-family: monospace;
     color: #7D7D7D;
-    margin-left: 350px;
     margin-top: 180px;
     font-size: 1.1em;
+    text-align: center;
 }
+
 
 
 
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: #F0F0F0;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
+    padding: 0 20px;
     margin-top: 80px;
-
 }
 
-.signature img{
+.signature img {
+    padding-top: 10px;
     width: 130px;
-    margin-top: 12px;
-    margin-left: 50px;
-    margin-right: 820px;
+}
 
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .email {
     font-family: monospace;
     font-size: 1.2em;
-    margin-top: 10px;
+    color: #333;
+    margin-right: 25px;
 }
 
-.icon-right img{
-    width: 20px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 10px;
+.social-icons {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 9px;
 }
 
-.icon-left img{
-    width: 20px;
-    margin-top: 10px;
-    margin-right: px;
+.social-icons img {
+    width: 21px;
+    height: 21px;
 }
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 0 10px;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+}
+
+
+
 
 
 /* ABOUT */

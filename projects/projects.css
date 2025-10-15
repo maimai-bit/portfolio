@@ -7,7 +7,6 @@
 
 
 body {
-    font-family: 'kalam';
     background-color: #fff;
     display: block;
     justify-content: center;
@@ -92,66 +91,87 @@ header {
     color: #8c8b8b; 
 }
 
+
+
+
 /* MESSAGE */
 
 
-.end-page-message{
+.end-page-message {
     font-family: monospace;
     color: #7D7D7D;
-    margin-left: 350px;
     margin-top: 180px;
     font-size: 1.1em;
+    text-align: center;
 }
+
 
 
 
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: #F0F0F0;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
+    padding: 0 20px;
     margin-top: 80px;
-
 }
 
-.signature img{
+.signature img {
+    padding-top: 10px;
     width: 130px;
-    margin-top: 12px;
-    margin-left: 50px;
-    margin-right: 820px;
+}
 
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .email {
     font-family: monospace;
     font-size: 1.2em;
-    margin-top: 10px;
+    color: #333;
+    margin-right: 25px;
 }
 
-.icon-right img{
-    width: 20px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 10px;
+.social-icons {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 9px;
 }
 
-.icon-left img{
-    width: 20px;
-    margin-top: 10px;
-    margin-right: px;
+.social-icons img {
+    width: 21px;
+    height: 21px;
 }
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 0 10px;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+}
+
+
+
 
 /* PROJECT */
 
-.project{
+.project {
     display: flex;
     flex-direction: column;
-    margin-left: 295px;
+    align-items: center; /* centers the images horizontally */
     margin-top: 30px;
 }
 
-.project img{
+.project img {
     width: 750px;
 }
