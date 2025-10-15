@@ -7,37 +7,30 @@
 
 
 body {
-    font-family: 'kalam';
     background-color: #fff;
-    display: block;
-    justify-content: center;
-}
-
-
-.header {
+    margin: 0;
     display: flex;
-    width: 100%;
-
+    flex-direction: column;
 }
 
-
-.title img {
-    width: 380px;
-    margin-left: 480px;
-    margin-bottom: 15px;
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center the logo and menu */
+    width: 100%;
     margin-top: 50px;
 }
 
-
-/*  MENU */
-
-.menu {
-    margin-left: 395px;
+/* LOGO */
+.title img {
+    width: 380px;
+    margin-bottom: 15px;
 }
 
+/* MENU */
 .menu ul {
-    width: 480px;          
-    
+    width: 480px;
     background-image: url('./images/menu-background.svg'); 
     background-repeat: no-repeat;
     background-position: center;
@@ -53,26 +46,22 @@ body {
     margin: 0;
 }
 
-
 .menu li a {
     font-family: 'Caveat', cursive; 
     text-decoration: none; 
     color: #c0bebe; 
     font-size: 1.5rem;
     transition: color 0.3s ease;
-    
 }
-
 
 .menu li a:hover {
     color: #a3a2a2; 
 }
 
-/* style.css */
-
 nav.menu ul li a.active {
-  color: #333;
+    color: #333;
 }
+
 
 
 /* PROJECTS */
@@ -112,8 +101,7 @@ nav.menu ul li a.active {
 
 
 
-/* MESSAGE */
-
+/* END OF PAGE MESSAGE */
 
 .end-page-message {
     font-family: monospace;
@@ -122,7 +110,6 @@ nav.menu ul li a.active {
     font-size: 1.1em;
     text-align: center;
 }
-
 
 
 
@@ -180,10 +167,7 @@ nav.menu ul li a.active {
 
 
 
-
-
-/* ABOUT */
-
+/* ABOUT PAGE STYLING */
 
 .about-me {
     display: flex;             
@@ -195,5 +179,6 @@ nav.menu ul li a.active {
     width: 750px;
     margin-top: 60px;
     margin-bottom: 100px;
+    padding-left: 55px;
 }
 
