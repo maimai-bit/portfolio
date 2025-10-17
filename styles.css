@@ -13,11 +13,14 @@ body {
     flex-direction: column;
 }
 
+
+
 /* HEADER */
+
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* center the logo and menu */
+    align-items: center;  
     width: 100%;
     margin-top: 50px;
 }
@@ -68,7 +71,7 @@ nav.menu ul li a.active {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(3, 230px);
   column-gap: 70px;                         
   row-gap: 20px;                           
   justify-content: center;                
@@ -76,7 +79,7 @@ nav.menu ul li a.active {
 }
 
 .project-item {
-  width: 250px;
+  width: 220px;
 }
 
 .tv-container {
@@ -98,6 +101,7 @@ nav.menu ul li a.active {
   object-fit: cover;
   border-radius: 4px;
 }
+
 
 
 
@@ -156,16 +160,6 @@ nav.menu ul li a.active {
     height: 21px;
 }
 
-@media (max-width: 600px) {
-    .footer {
-        padding: 0 10px;
-    }
-
-    .email {
-        font-size: 12px;
-    }
-}
-
 
 
 /* ABOUT PAGE STYLING */
@@ -183,3 +177,208 @@ nav.menu ul li a.active {
     padding-left: 55px;
 }
 
+
+
+
+/* MEDIA QUERY */
+
+
+/* PHONES */
+
+@media (min-width: 344px) and (max-width:430px){
+    .projects{
+        grid-template-columns: repeat(2, 100px);
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-item {
+         width: 140px;
+    }
+
+    .title img {
+        width: 240px;
+        margin-bottom: 0px;
+    }
+
+    .menu ul {
+        width: 250px;
+    }
+
+    .menu li a {
+    font-size: 1.0rem;
+    }
+
+    .footer {
+        height: auto; 
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .email {
+        margin-right: 0; 
+        padding-top: 0;
+        font-size: 12px;
+    }
+
+    .signature img {
+        width: 120px;
+        padding-top: 0; 
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+     .end-page-message{
+        font-size: 11px;
+        max-width: 300px;
+        margin: 0 auto;          
+        text-align: center;
+        line-height: 1.5;        
+        word-wrap: break-word;
+        
+    }
+}
+
+
+
+/* SMALL LAPTOP */
+
+@media (min-width: 1440px){
+    .projects{
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-item {
+         width: 250px;
+    }
+
+    /* .title img {
+        width: 300px;
+        margin-bottom: 0px;
+    }
+
+    .menu ul {
+        width: 380px;
+    }
+
+    .menu li a {
+    font-size: 1.4rem;
+    } */
+
+    .email {
+        margin-right: 0; 
+        padding-top: 0;
+        font-size: 17px;
+    }
+
+    .signature img {
+        width: 150px;
+        padding-top: 0; 
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+}
+
+
+/* LARGE LAPTOP */
+
+@media (min-width: 1728px){
+    .projects{
+        grid-template-columns: repeat(3, 280px);
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-item {
+         width: 290px;
+    }
+
+    /* .title img {
+        width: 350px;
+        margin-bottom: 0px;
+    }
+
+    .menu ul {
+        width: 450px;
+    }
+
+    .menu li a {
+    font-size: 1.4rem;
+    } */
+
+
+    .email {
+        margin-right: 0; 
+        padding-top: 0;
+        font-size: 17px;
+    }
+
+    .signature img {
+        width: 150px;
+        padding-top: 0; 
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+}
+
+/* SMALL DESKTOP */
+
+@media (min-width: 2560px){
+    .projects{
+        grid-template-columns: repeat(3, 450px);
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-item {
+         width: 450px;
+    }
+
+    .title img {
+        width: 450px;
+        margin-bottom: 0px;
+    }
+
+    .menu ul {
+        width: 600px;
+    }
+
+    .menu li a {
+    font-size: 2rem;
+    }
+
+    .email {
+        margin-right: 0; 
+        padding-top: 0;
+        font-size: 25px;
+    }
+
+    .social-icons {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 9px;
+}
+
+.social-icons img {
+    width: 21px;
+    height: 21px;
+}
+
+}
