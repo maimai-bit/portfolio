@@ -50,7 +50,7 @@ header {
 }
 
 .menu li a {
-    font-family: 'Caveat', cursive; 
+    font-family: monospace; 
     text-decoration: none; 
     color: #c0bebe; 
     font-size: 1.5rem;
@@ -174,10 +174,9 @@ nav.menu ul li a.active {
 }
 
 .about-me img {
-    width: 750px;
+    width: 60%;
     margin-top: 60px;
     margin-bottom: 100px;
-    padding-left: 55px;
 }
 
 
@@ -248,6 +247,14 @@ nav.menu ul li a.active {
         line-height: 1.5;
         word-wrap: break-word;
     }
+
+    .about-me img{
+        width: 50%;
+        
+    }
+
+    
+
 }
 
 
