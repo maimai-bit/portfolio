@@ -30,7 +30,7 @@ body {
 
 
 .menu ul {
-    width: 480px;          
+    width: 520px;          
     
     background-image: url('../images/menu-background.svg'); 
     background-repeat: no-repeat;
@@ -169,30 +169,49 @@ header {
 /* PHONES  */
 
 @media (max-width: 480px) {
+
+    header {
+        gap: 10px;
+        padding: 0 10px;
+    }
     
     .project img{
-        width: 400px;
+        width: 100%;
     }
 
     .title img {
-        width: 240px;
+        width: 220px;
+        margin-top: 30px;
         margin-bottom: 0;
     }
 
+    .main-nav-container {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
     .menu ul {
-        width: 250px;
+        width: auto;
+        padding: 18px 25px;
+        background-size: 100% 100%;
     }
 
     .menu li a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
-    .page-controls img{
-        width: 30px;
+    .page-controls {
+        gap: 8px;
     }
 
-    .close-control img{
-        width: 30px;
+    .page-controls img {
+        width: 28px;
+    }
+
+    .close-control img {
+        width: 28px;
     }
 
     .footer {

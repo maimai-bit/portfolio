@@ -33,7 +33,7 @@ header {
 
 /* MENU */
 .menu ul {
-    width: 480px;
+    width: 520px;
     background-image: url('./images/menu-background.svg'); 
     background-repeat: no-repeat;
     background-position: center;
@@ -71,18 +71,19 @@ nav.menu ul li a.active {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 230px);
-  column-gap: 70px;                         
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;                         
   row-gap: 20px;                           
   justify-content: center;                
-  padding: 50px;
+  padding: 50px 30px;
 }
 
 .project-item {
     display: flex;
     justify-self: center;
     align-self: center;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
 }
 
 .tv-container {
@@ -188,15 +189,20 @@ nav.menu ul li a.active {
 /* PHONES  */
 
 @media (max-width: 480px) {
+    header {
+        margin-top: 25px;
+    }
+
     .projects {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 40px;
-        justify-content: center;
-        margin: 0;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 30px 20px;
     }
 
     .project-item {
-        width: 140px;
+        width: 100%;
+        max-width: 140px;
     }
 
     .title img {
@@ -205,7 +211,10 @@ nav.menu ul li a.active {
     }
 
     .menu ul {
-        width: 250px;
+        width: 90%;
+        max-width: 380px;
+        padding: 18px 30px;
+        background-size: 100% 100%;
     }
 
     .menu li a {
@@ -258,33 +267,33 @@ nav.menu ul li a.active {
 }
 
 
+/* TABLETS & SMALL LAPTOPS */
 
-/* SMALL LAPTOP */
+@media (min-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+        row-gap: 20px;
+        padding: 50px;
+    }
+
+    .project-item {
+        max-width: 230px;
+    }
+}
+
+
+/* MEDIUM LAPTOP */
 
 @media (min-width: 1440px){
     .projects{
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
-        justify-content: center;
-        margin: 0;
+        column-gap: 50px;
     }
 
     .project-item {
-         width: 250px;
+         max-width: 250px;
     }
-
-    /* .title img {
-        width: 300px;
-        margin-bottom: 0px;
-    }
-
-    .menu ul {
-        width: 380px;
-    }
-
-    .menu li a {
-    font-size: 1.4rem;
-    } */
 
     .email {
         margin-right: 0; 
@@ -310,26 +319,11 @@ nav.menu ul li a.active {
     .projects{
         grid-template-columns: repeat(3, 280px);
         justify-content: center;
-        margin: 0;
     }
 
     .project-item {
-         width: 290px;
+         max-width: 290px;
     }
-
-    /* .title img {
-        width: 350px;
-        margin-bottom: 0px;
-    }
-
-    .menu ul {
-        width: 450px;
-    }
-
-    .menu li a {
-    font-size: 1.4rem;
-    } */
-
 
     .email {
         margin-right: 0; 
@@ -354,11 +348,10 @@ nav.menu ul li a.active {
     .projects{
         grid-template-columns: repeat(3, 450px);
         justify-content: center;
-        margin: 0;
     }
 
     .project-item {
-         width: 450px;
+         max-width: 450px;
     }
 
     .title img {
@@ -393,3 +386,4 @@ nav.menu ul li a.active {
 }
 
 }
+
