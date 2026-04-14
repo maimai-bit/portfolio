@@ -188,14 +188,22 @@ header {
     .main-nav-container {
         flex-wrap: nowrap;
         justify-content: center;
-        gap: 12px;
+        gap: 8px;
         width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .menu {
+        flex: 1;
+        min-width: 0;
     }
 
     .menu ul {
-        width: auto;
-        padding: 18px 25px;
-        background-size: 100% 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 12px;
+        background-image: none;
     }
 
     .menu li a {
