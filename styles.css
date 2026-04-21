@@ -72,8 +72,8 @@ nav.menu ul li a.active {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;                         
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 5px;                         
   row-gap: 20px;                           
   justify-content: center;                
   padding: 50px 30px;
@@ -92,19 +92,22 @@ nav.menu ul li a.active {
   width: 100%;
 }
 
+/* frame */
 .tv-base {
   width: 100%;
   display: block;
 }
 
+/* thumbnail */
 .tv-screen {
   position: absolute;
   top: 18%;
   left: 10%;
-  width: 80%;
-  height: 62%;
+  width: 81%;
+  height: 65%;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 0px;
+  padding-top: 15px;
 }
 
 
@@ -210,9 +213,21 @@ footer {
         max-width: 140px;
     }
 
+    .tv-screen {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 81%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 0px;
+  padding-top: 9px;
+}
+
     .title img {
         width: 240px;
         margin-bottom: 0;
+        margin-top: 50px;
     }
 
     .menu ul {
@@ -259,6 +274,8 @@ footer {
         text-align: center;
         line-height: 1.5;
         word-wrap: break-word;
+        margin-top: 180px;
+        margin-bottom: 90px;
     }
 
     .about-me img{
@@ -266,7 +283,6 @@ footer {
         
     }
 
-    
 
 }
 
