@@ -1,70 +1,66 @@
-.html, body{
+/* RESET */
+
+html, body {
   height: 100%;
   margin: 0;
 }
 
-
 body {
-    background-color: #fff;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-
 
 /* HEADER */
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    width: 100%;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 100%;
+  margin-top: 50px;
 }
 
 /* LOGO */
 .title img {
-    width: 380px;
-    margin-bottom: 15px;
+  width: 380px;
+  margin-bottom: 15px;
 }
 
 /* MENU */
 .menu ul {
-    width: 520px;
-    background-image: url('./images/menu-background.svg'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
+  width: 520px;
+  background-image: url('./images/menu-background.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 
-    list-style: none;
-    font-size: 18px;
-    padding: 20px 40px;
-    margin: 0;
+  list-style: none;
+  font-size: 18px;
+  padding: 20px 40px;
+  margin: 0;
 }
 
 .menu li a {
-    font-family: monospace; 
-    text-decoration: none; 
-    color: #c0bebe; 
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+  font-family: monospace; 
+  text-decoration: none; 
+  color: #c0bebe; 
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .menu li a:hover {
-    color: #a3a2a2; 
+  color: #a3a2a2; 
 }
 
 nav.menu ul li a.active {
-    color: #333;
+  color: #333;
 }
-
-
 
 /* PROJECTS */
 
@@ -78,9 +74,9 @@ nav.menu ul li a.active {
 }
 
 .project-item {
-    display: flex;
-    justify-self: center;
-    align-self: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
   width: 100%;
   max-width: 220px;
 }
@@ -99,295 +95,186 @@ nav.menu ul li a.active {
 /* thumbnail */
 .tv-screen {
   position: absolute;
-  top: 18%;
-  left: 10%;
-  width: 81%;
+  top: 5%;
+  right: 25px;
+  width: 79%;
   height: 65%;
   object-fit: cover;
-  border-radius: 0px;
-  padding-top: 15px;
 }
-
-
-
 
 /* END OF PAGE MESSAGE */
 
 .end-page-message {
-    font-family: monospace;
-    color: #7D7D7D;
-    margin-top: 180px;
-    margin-bottom: 90px;
-    font-size: 1.1em;
-    text-align: center;
+  font-family: monospace;
+  color: #7D7D7D;
+  margin-top: 180px;
+  margin-bottom: 90px;
+  font-size: 1.1em;
+  text-align: center;
 }
-
-
 
 /* FOOTER */
 
 footer {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .footer {
-    background-color: #F0F0F0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    padding: 0 20px;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
 }
 
 .signature img {
-    padding-top: 10px;
-    width: 130px;
+  padding-top: 10px;
+  width: 130px;
 }
 
 .footer-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .email {
-    font-family: monospace;
-    font-size: 1.2em;
-    color: #333;
-    margin-right: 25px;
-    padding-top: 6px;
+  font-family: monospace;
+  font-size: 1.2em;
+  color: #333;
+  margin-right: 25px;
+  padding-top: 6px;
 }
 
 .social-icons {
-    display: flex;
-    padding-top: 10px;
-    align-items: center;
-    gap: 9px;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  gap: 9px;
 }
 
 .social-icons img {
-    width: 21px;
-    height: 21px;
+  width: 21px;
+  height: 21px;
 }
 
-
-
-
-
-
-/* MEDIA QUERY */
-
-
-/* PHONES  */
+/* PHONES */
 
 @media (max-width: 480px) {
-    header {
-        margin-top: 25px;
-    }
+  header {
+    margin-top: 25px;
+  }
 
-    .projects {
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 15px;
-        row-gap: 15px;
-        padding: 30px 20px;
-    }
+  .projects {
+    row-gap: 15px;
+    padding: 30px 20px;
+  }
 
-    .project-item {
-        width: 100%;
-        max-width: 140px;
-    }
+  .project-item {
+    max-width: 140px;
+  }
 
-    .tv-screen {
-  position: absolute;
-  top: 18%;
-  left: 10%;
-  width: 81%;
-  height: 65%;
-  object-fit: cover;
-  border-radius: 0px;
+  .title img {
+    width: 240px;
+    margin-top: 50px;
+  }
+
+  .menu ul {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 18px 25px;
+  }
+
+  .menu li a {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .email {
+    margin-right: 0;
+    padding-top: 0;
+    font-size: 12px;
+  }
+
+  .signature img {
+    width: 120px;
+    padding-top: 0;
+  }
+
+  .social-icons {
+    padding-top: 0;
+  }
+
+  .end-page-message {
+    font-size: 11px;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
-    .title img {
-        width: 240px;
-        margin-bottom: 0;
-        margin-top: 50px;
-    }
+/* TABLETS */
 
-    .menu ul {
-        width: 320px;
-        box-sizing: border-box;
-        padding: 18px 25px;
-    }
+@media (min-width: 481px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    padding: 50px;
+  }
 
-    .menu li a {
-        font-size: 1.1rem;
-    }
-
-    .footer {
-        height: auto;
-        padding: 20px;
-        align-items: flex-start;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 10px;
-    }
-
-    .email {
-        margin-right: 0;
-        padding-top: 0;
-        font-size: 12px;
-    }
-
-    .signature img {
-        width: 120px;
-        padding-top: 0;
-    }
-
-    .social-icons {
-        padding-top: 0;
-    }
-
-    .end-page-message {
-        font-size: 11px;
-        max-width: 300px;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 1.5;
-        word-wrap: break-word;
-        margin-top: 180px;
-        margin-bottom: 90px;
-    }
-
-    .about-me img{
-        width: 50%;
-        
-    }
-
-
+  .project-item {
+    max-width: 230px;
+  }
 }
 
+/* LARGE SCREENS */
 
-/* TABLETS & SMALL LAPTOPS */
+@media (min-width: 1728px) {
+  .projects {
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    row-gap: 80px;
+  }
 
-@media (min-width: 768px) {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
-        row-gap: 20px;
-        padding: 50px;
-    }
-
-    .project-item {
-        max-width: 230px;
-    }
+  .project-item {
+    max-width: 290px;
+  }
 }
 
+@media (min-width: 2560px) {
+  .projects {
+    grid-template-columns: repeat(3, 450px);
+  }
 
-/* MEDIUM LAPTOP */
+  .project-item {
+    max-width: 450px;
+  }
 
-@media (min-width: 1440px){
-    .projects{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .title img {
+    width: 450px;
+  }
 
-    .project-item {
-         max-width: 250px;
-    }
+  .menu ul {
+    width: 600px;
+  }
 
-    .email {
-        margin-right: 0; 
-        padding-top: 0;
-        font-size: 17px;
-    }
-
-    .signature img {
-        width: 150px;
-        padding-top: 0; 
-    }
-
-    .social-icons {
-        padding-top: 0;
-    }
-
-}
-
-
-/* LARGE LAPTOP */
-
-@media (min-width: 1728px){
-    .projects{
-        grid-template-columns: repeat(3, 280px);
-        justify-content: center;
-        row-gap: 80px;
-    }
-
-    .project-item {
-         max-width: 290px;
-    }
-
-    .email {
-        margin-right: 0; 
-        padding-top: 0;
-        font-size: 17px;
-    }
-
-    .signature img {
-        width: 150px;
-        padding-top: 0; 
-    }
-
-    .social-icons {
-        padding-top: 0;
-    }
-
-}
-
-/* SMALL DESKTOP */
-
-@media (min-width: 2560px){
-    .projects{
-        grid-template-columns: repeat(3, 450px);
-        justify-content: center;
-        row-gap: 80px;
-    }
-
-    .project-item {
-         max-width: 450px;
-    }
-
-    .title img {
-        width: 450px;
-        margin-bottom: 0px;
-    }
-
-    .menu ul {
-        width: 600px;
-    }
-
-    .menu li a {
+  .menu li a {
     font-size: 2rem;
-    }
+  }
 
-    .email {
-        margin-right: 0; 
-        padding-top: 0;
-        font-size: 25px;
-    }
-
-    .social-icons {
-    display: flex;
-    padding-top: 10px;
-    align-items: center;
-    gap: 9px;
+  .email {
+    font-size: 25px;
+  }
 }
-
-.social-icons img {
-    width: 21px;
-    height: 21px;
-}
-
-}
-
