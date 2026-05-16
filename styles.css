@@ -110,6 +110,34 @@ nav.menu ul li a.active {
   padding-top: 15px;
 }
 
+/* Stack the TV container and the title vertically */
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally under the image */
+    justify-content: flex-start;
+}
+
+/* Style the text wrapper */
+.project-title {
+    margin-top: 15px; /* Adds space between the laptop/TV frame and text */
+    text-align: center;
+}
+
+/* Style the link to look like a clean caption */
+.project-title a {
+    text-decoration: none; /* Removes the default underline */
+    color: #000000;       /* Solid black text like your image */
+    font-family: 'Courier New', Courier, monospace; /* Matches the sketchy/monospace look */
+    font-size: 16px;
+    letter-spacing: 1px;  /* Adds slight spacing between letters */
+}
+
+/* Optional: Subtle hover effect so users know it's clickable */
+.project-title a:hover {
+    opacity: 0.7;
+}
+
 
 
 

@@ -102,6 +102,30 @@ nav.menu ul li a.active {
   object-fit: cover;
 }
 
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+}
+
+.project-title {
+    margin-top: 15px; 
+    text-align: center;
+}
+
+.project-title a {
+    text-decoration: none; 
+    color: #000000;       
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 16px;
+    letter-spacing: 1px;  
+}
+
+.project-title a:hover {
+    opacity: 0.7;
+}
+
 /* END OF PAGE MESSAGE */
 
 .end-page-message {
