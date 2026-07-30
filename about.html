@@ -1,74 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About graphic and web designer Maikelly Cardoso.">
+    <title>About | Maikelly Cardoso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="components/site-components.js" defer></script>
   </head>
-
   <body>
-    
-    <!-- NAVEGATION -->
+    <site-header active="about"></site-header>
 
-    <header>
-        <div class="title"> 
-  <a href="./index.html">
-    <img src="./images/Maikelly-Cardoso.svg" alt="Maikelly Cardoso" />
-  </a>
-</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="./index.html">graphic</a></li>
-                <li><a href="./web.html">web</a></li>
-                <li><a href="./files/RESUME - CARDOSO MAIKELLY.pdf">cv</a></li>
-                <li><a class="active" href="./about.html">about</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="about-me">
+      <img src="images/about-me.svg" alt="About Maikelly Cardoso">
+    </main>
 
-
-    <!-- PAGE MAIN CONTENT -->
-
-    <div class="about-me">
-        <img src="./images/about-me.svg"/>
-    </div>
-
-
-
-    <!-- END OF PAGE MESSAGE -->
-
-    <div class="end-page-message"> 
-        <p> That's a wrap! Thank you for taking a look at my work, let's keep in touch.</p>
-    </div>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-        <div class="footer">
-            <div class="signature">
-                <img src="./images/Maikelly-Cardoso.svg" />
-            </div>
-
-            <div class="footer-right">
-                <div class="email">maisdesigning@gmail.com</div>
-
-                <div class="social-icons">
-                    <a href="https://www.behance.net/1sugar99ice">
-                    <img src="./icons/behace.svg" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/maidesignshere">
-                    <img src="./icons/linkedin.svg" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <end-page-message></end-page-message>
+    <site-footer></site-footer>
   </body>
 </html>

@@ -1,135 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Graphic design portfolio by Maikelly Cardoso.">
+    <title>Graphic Design | Maikelly Cardoso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="components/site-components.js" defer></script>
   </head>
-
   <body>
-   
-    <!-- NAVEGATION -->
+    <site-header active="graphic"></site-header>
 
-    <header>
-        <div class="title"> 
-  <a href="./index.html">
-    <img src="./images/Maikelly-Cardoso.svg" alt="Maikelly Cardoso" />
-  </a>
-</div>
-        <nav class="menu">
-            <ul>
-                <li><a class="active" href="./index.html">graphic</a></li>
-                <li><a href="./web.html">web</a></li>
-                <li><a href="./files/RESUME - CARDOSO MAIKELLY.pdf">cv</a></li>
-                <li><a href="./about.html">about</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- PROJECTS -->
-
-    <main>
-        <main>
-    <div class="projects">
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/rollna.html"> <img src="./images/rollna-01.webp" alt="Rollna" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/rollna.html">Branding + Graphics</a></p>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/pace.html"> <img src="./images/pace-01.webp" alt="Pace" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/pace.html">Branding + Package</a></p>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/glora.html"> <img src="./images/glora-01.webp" alt="Glora" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/glora.html">Branding</a></p>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/prof-post.html"> <img src="./images/post-prof-cover.webp" alt="Prof-Post" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/prof-post.html">Social Media Post</a></p>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/casa-burger.html"> <img src="./images/casa-burger-post-cover.webp" alt="Casa-Do-Cafezin-Post" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/casa-burger.html">Flyer</a></p>
-            </div>
-        </div>     
-
-        <div class="project-item">
-            <div class="tv-container">
-                <img src="./images/picture-frame.png" alt="Picture frame" class="tv-base">
-                <a href="./projects/fuerte.html"> <img src="./images/fuerte-cover.png" alt="Fuerte Flyer" class="tv-screen"> </a>
-            </div>
-            <div class="project-info">
-                <p class="project-title"><a href="./projects/fuerte.html">Flyer</a></p>
-            </div>
-        </div>  
-    </div>
-
-    
-        <!-- END OF PAGE MESSAGE -->
-
-        <div class="end-page-message"> 
-            <p> That's a wrap! Thank you for taking a look at my work, let's keep in touch.</p>
-        </div>
-
+    <main class="projects projects--graphic" aria-label="Graphic design projects">
+      <project-card
+        href="projects/rollna.html"
+        image="images/rollna-01.webp"
+        alt="Rollna brand and packaging design"
+        title="Branding + Graphics"
+      ></project-card>
+      <project-card
+        href="projects/pace.html"
+        image="images/pace-01.webp"
+        alt="Pace+ brand and packaging design"
+        title="Branding + Package"
+      ></project-card>
+      <project-card
+        href="projects/glora.html"
+        image="images/glora-01.webp"
+        alt="Glora brand identity"
+        title="Branding"
+      ></project-card>
+      <project-card
+        href="projects/prof-post.html"
+        image="images/post-prof-cover.webp"
+        alt="Professor Rozeni social media design"
+        title="Social Media Post"
+      ></project-card>
+      <project-card
+        href="projects/casa-burger.html"
+        image="images/casa-burger-post-cover.webp"
+        alt="Casa do Cafezin flyer design"
+        title="Flyer"
+      ></project-card>
+      <project-card
+        href="projects/fuerte.html"
+        image="images/fuerte-cover.png"
+        alt="Fuerte flyer design"
+        title="Flyer"
+      ></project-card>
     </main>
 
-        <!-- FOOTER -->
-
-    <footer>
-        <div class="footer">
-            <div class="signature">
-                <img src="./images/Maikelly-Cardoso.svg" />
-            </div>
-
-            <div class="footer-right">
-                <div class="email">maisdesigning@gmail.com</div>
-
-                <div class="social-icons">
-                    <a href="https://www.behance.net/1sugar99ice">
-                    <img src="./icons/behace.svg" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/maidesignshere">
-                    <img src="./icons/linkedin.svg" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <end-page-message></end-page-message>
+    <site-footer></site-footer>
   </body>
 </html>
