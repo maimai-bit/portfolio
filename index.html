@@ -6,48 +6,56 @@
     <meta name="description" content="Graphic design portfolio by Maikelly Cardoso.">
     <title>Graphic Design | Maikelly Cardoso</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="components/site-components.js" defer></script>
+    <script type="module" src="components/index.js"></script>
   </head>
-  <body>
+  <body class="listing-page">
     <site-header active="graphic"></site-header>
 
-    <main class="projects projects--graphic" aria-label="Graphic design projects">
-      <project-card
-        href="projects/rollna.html"
-        image="images/rollna-01.webp"
-        alt="Rollna brand and packaging design"
-        title="Branding + Graphics"
-      ></project-card>
-      <project-card
-        href="projects/pace.html"
-        image="images/pace-01.webp"
-        alt="Pace+ brand and packaging design"
-        title="Branding + Package"
-      ></project-card>
-      <project-card
-        href="projects/glora.html"
-        image="images/glora-01.webp"
-        alt="Glora brand identity"
-        title="Branding"
-      ></project-card>
-      <project-card
-        href="projects/prof-post.html"
-        image="images/post-prof-cover.webp"
-        alt="Professor Rozeni social media design"
-        title="Social Media Post"
-      ></project-card>
-      <project-card
-        href="projects/casa-burger.html"
-        image="images/casa-burger-post-cover.webp"
-        alt="Casa do Cafezin flyer design"
-        title="Flyer"
-      ></project-card>
-      <project-card
-        href="projects/fuerte.html"
-        image="images/fuerte-cover.png"
-        alt="Fuerte flyer design"
-        title="Flyer"
-      ></project-card>
+    <main class="carousel-page">
+      <project-carousel label="Graphic design projects">
+        <project-card
+          href="projects/rollna.html"
+          image="images/rollna-01.webp"
+          alt="Rollna brand and packaging design"
+          title="Rollna"
+          description="Brand Identity, Packaging &amp; Print"
+        ></project-card>
+        <project-card
+          href="projects/pace.html"
+          image="images/pace-01.webp"
+          alt="Pace+ brand and packaging design"
+          title="Pace+"
+          description="Brand Identity &amp; Packaging"
+        ></project-card>
+        <project-card
+          href="projects/glora.html"
+          image="images/glora-01.webp"
+          alt="Glora brand identity"
+          title="Glora"
+          description="Brand Identity"
+        ></project-card>
+        <project-card
+          href="projects/prof-post.html"
+          image="images/post-prof-cover.webp"
+          alt="Professor Rozeni social media design"
+          title="Professor Rozeni"
+          description="Social Media Design"
+        ></project-card>
+        <project-card
+          href="projects/casa-burger.html"
+          image="images/casa-burger-post-cover.webp"
+          alt="Casa do Cafezin flyer design"
+          title="Casa do Cafezin"
+          description="Flyer Design"
+        ></project-card>
+        <project-card
+          href="projects/fuerte.html"
+          image="images/fuerte-cover.png"
+          alt="Fuerte flyer design"
+          title="Fuerte"
+          description="Flyer Design"
+        ></project-card>
+      </project-carousel>
     </main>
 
     <end-page-message></end-page-message>
