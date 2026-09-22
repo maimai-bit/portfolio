@@ -34,12 +34,12 @@ class ProjectCard extends HTMLElement {
     frameImage.setAttribute("aria-hidden", "true");
 
     visualContent.append(
-      frameImage,
       createImage({
         src: this.getAttribute("image"),
         alt: this.getAttribute("alt") || projectName,
         className: "project-frame__image",
-      })
+      }),
+      frameImage
     );
     visual.append(visualContent);
 

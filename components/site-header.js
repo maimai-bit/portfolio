@@ -27,7 +27,6 @@ class SiteHeader extends HTMLElement {
       ["graphic", "index.html"],
       ["web", "web.html"],
       ["cv", "files/RESUME - CARDOSO MAIKELLY.pdf"],
-      ["about", "about.html"],
     ];
     const navigation = document.createElement("nav");
     const list = document.createElement("ul");

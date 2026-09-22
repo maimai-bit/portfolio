@@ -80,7 +80,8 @@ header {
   align-items: center;
   background: url("./images/menu-background.svg") center / 100% 100% no-repeat;
   display: flex;
-  justify-content: space-between;
+  gap: clamp(46px, 7vw, 100px);
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 18px clamp(30px, 3.2vw, 52px);
@@ -103,7 +104,7 @@ header {
 /* Listing carousel */
 
 .carousel-page {
-  padding: clamp(90px, 10vw, 175px) 24px 0;
+  padding: clamp(50px, 7vw, 125px) 24px 0;
 }
 
 project-carousel {
@@ -168,7 +169,9 @@ project-carousel:focus-visible .carousel-viewport {
 
 .project-frame__base {
   display: block;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .project-frame__image {
@@ -177,10 +180,10 @@ project-carousel:focus-visible .carousel-viewport {
 }
 
 .project-card--picture .project-frame__image {
-  height: 62%;
-  left: 10%;
-  top: 22.5%;
-  width: 81%;
+  height: 67.6%;
+  left: 9.4%;
+  top: 24.2%;
+  width: 82.5%;
 }
 
 .project-card--computer .project-frame__image {
@@ -258,6 +261,9 @@ project-carousel:focus-visible .carousel-viewport {
 }
 
 .project-view__close {
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
   position: absolute;
   right: clamp(-22px, -1.4vw, -12px);
   top: clamp(-22px, -1.4vw, -12px);
@@ -265,20 +271,7 @@ project-carousel:focus-visible .carousel-viewport {
 }
 
 .project-view__close img {
-  width: clamp(32px, 2.8vw, 44px);
-}
-
-/* About page */
-
-.about-me {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me img {
-  margin: 80px 0 120px;
-  width: min(70vw, 980px);
+  width: clamp(42px, 3.5vw, 56px);
 }
 
 /* Closing message and footer */
@@ -362,7 +355,7 @@ site-footer {
   }
 
   .carousel-page {
-    padding: 80px 10px 0;
+    padding: 40px 10px 0;
   }
 
   project-carousel {
@@ -407,7 +400,7 @@ site-footer {
   }
 
   .project-view__close img {
-    width: 30px;
+    width: 40px;
   }
 
   .end-page-message {
