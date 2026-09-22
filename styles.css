@@ -118,6 +118,13 @@ project-carousel {
   width: 100%;
 }
 
+@media (min-width: 721px) {
+  .web-listing project-carousel {
+    grid-template-columns: 48px minmax(0, 820px) 48px;
+    max-width: 1160px;
+  }
+}
+
 .carousel-viewport {
   min-width: 0;
   width: 100%;
@@ -188,9 +195,14 @@ project-carousel:focus-visible .carousel-viewport {
 
 .project-card--computer .project-frame__image {
   height: 65%;
-  right: 6.2%;
-  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7%;
   width: 79%;
+}
+
+.web-listing .project-card--computer .project-frame__image {
+  object-position: top center;
 }
 
 .project-title {
@@ -217,8 +229,10 @@ project-carousel:focus-visible .carousel-viewport {
   font-family: var(--font-mono);
   font-size: clamp(0.85rem, 1.05vw, 1.05rem);
   letter-spacing: 0.5px;
+  line-height: 1.7;
   margin: 20px 0 0;
   text-align: center;
+  white-space: pre-line;
 }
 
 /* Project detail pages */
@@ -235,8 +249,26 @@ project-carousel:focus-visible .carousel-viewport {
 }
 
 .project-view__stage {
-  position: relative;
   width: min(48vw, 720px);
+}
+
+.project-view__artwork {
+  position: relative;
+}
+
+.project-live-link {
+  color: var(--color-muted);
+  display: table;
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 1.05vw, 1rem);
+  margin: 0 auto clamp(20px, 2vw, 30px);
+  text-decoration: none;
+}
+
+.project-live-link:hover,
+.project-live-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .project-gallery img {

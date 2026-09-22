@@ -59,6 +59,7 @@ class ProjectCard extends HTMLElement {
     details.textContent = description;
 
     article.append(visual, title, details);
+
     this.append(article);
   }
 }

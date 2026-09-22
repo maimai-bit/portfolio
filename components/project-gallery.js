@@ -1,4 +1,4 @@
-import { createIconLink, createImage, defineElement } from "./utils.js";
+import { createIconLink, createImage, defineElement, resolveSiteUrl } from "./utils.js";
 
 class ProjectGallery extends HTMLElement {
   connectedCallback() {
@@ -12,9 +12,11 @@ class ProjectGallery extends HTMLElement {
       .filter(Boolean);
     const view = document.createElement("main");
     const stage = document.createElement("div");
+    const artwork = document.createElement("div");
     const gallery = document.createElement("div");
     view.className = "project-view";
     stage.className = "project-view__stage";
+    artwork.className = "project-view__artwork";
     gallery.className = "project-gallery";
     gallery.setAttribute("aria-label", `${projectName} project images`);
 
@@ -28,7 +30,7 @@ class ProjectGallery extends HTMLElement {
       );
     });
 
-    stage.append(
+    artwork.append(
       createIconLink({
         href: this.getAttribute("close") || "index.html",
         icon: "icons/close-icon.svg",
@@ -37,6 +39,19 @@ class ProjectGallery extends HTMLElement {
       }),
       gallery
     );
+
+    const liveUrl = this.getAttribute("live");
+    if (liveUrl) {
+      const liveLink = document.createElement("a");
+      liveLink.className = "project-live-link";
+      liveLink.href = resolveSiteUrl(liveUrl);
+      liveLink.target = "_blank";
+      liveLink.rel = "noopener noreferrer";
+      liveLink.textContent = "See live";
+      stage.append(liveLink);
+    }
+
+    stage.append(artwork);
     view.append(
       createIconLink({
         href: this.getAttribute("previous"),
